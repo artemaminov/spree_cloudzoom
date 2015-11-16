@@ -1,3 +1,3 @@
 module SpreeCloudzoom
-  VERSION = "3.1.1409091635"
+  VERSION = "3.1.1507231015"
 end

@@ -1,6 +1,27 @@
-<!--TODO cloudzoom-paris class as variable-->
 <% if image %>
-  <%= image_tag image.attachment.url(:product), :itemprop => "image", :class => "cloudzoom", data: { cloudzoom: "zoomSizeMode: 'zoom', zoomFlyOut: false, zoomClass: 'cloudzoom-paris', lensClass: 'cloudlens-paris', animationTime: 100, tintOpacity: 0.2, zoomImage: '#{ image.attachment.url(:large) }'" } %>
+  <%= image_tag image.attachment.url(:product),
+                :itemprop => "image",
+                :class => "cloudzoom",
+                data: {
+                    cloudzoom:
+                        "zoomSizeMode: 'zoom',
+                        zoomFlyOut: false,
+                        animationTime: 100,
+                        tintOpacity: 0.2,
+                        zoomImage: '#{ image.attachment.url(:large) }'"
+                }
+  %>
 <% else %>
-  <%= product_image(@product, :itemprop => "image", :class => "cloudzoom", data: { cloudzoom: "zoomSizeMode: 'zoom', zoomFlyOut: false, zoomClass: 'cloudzoom-paris', lensClass: 'cloudlens-paris', animationTime: 100, tintOpacity: 0.2, zoomImage: '#{ large_image(@product, src_only: true) }'" }) %>
+  <%= product_image(@product,
+                    :itemprop => "image",
+                    :class => "cloudzoom",
+                    data: {
+                        cloudzoom:
+                            "zoomSizeMode:'zoom',
+                            zoomFlyOut: false,
+                            animationTime: 100,
+                            tintOpacity: 0.2,
+                            zoomImage: '#{ large_image(@product, src_only: true) }'"
+                    })
+  %>
 <% end %>

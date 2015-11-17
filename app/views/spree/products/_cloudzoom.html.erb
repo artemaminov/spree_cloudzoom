@@ -1,2 +1,10 @@
-<!--TODO cloudzoom-paris class as variable-->
-<%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), data: { cloudzoom: "zoomSizeMode: 'zoom', zoomFlyOut: false, zoomClass: 'cloudzoom-paris', lensClass: 'cloudlens-paris', zoomImage: '#{ i.attachment.url(:large) }', animationTime: 100, tintOpacity: 0.2", zoomimage: "#{ i.attachment.url(:large) }" }) %>
+<%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product),
+            data: {
+                cloudzoom:
+                    "zoomSizeMode: 'zoom',
+                    zoomFlyOut: false,
+                    zoomImage: '#{ i.attachment.url(:large) }',
+                    animationTime: 100,
+                    tintOpacity: 0.2",
+                zoomimage: "#{ i.attachment.url(:large) }" })
+%>

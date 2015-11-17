@@ -1,0 +1,14 @@
+<%= mini_image(product,
+        id: "product-id-#{ product.id }",
+        class: 'cloudzoom',
+        data: {
+            cloudzoom:
+                "zoomSizeMode: 'zoom',
+                zoomFlyOut: false,
+                zoomImage: '#{ large_image(product, :src_only => true) }',
+                animationTime: 100,
+                tintOpacity: 0.2,
+                startMagnification: 15,
+                lazyLoadZoom: true"
+        }
+    ) %>

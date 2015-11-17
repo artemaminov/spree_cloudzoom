@@ -1,0 +1,2 @@
+$ ->
+  CloudZoom.quickStart()

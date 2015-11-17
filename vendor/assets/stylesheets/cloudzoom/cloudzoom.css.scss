@@ -46,7 +46,7 @@
 
 /* The animated ajax loading image */
 .cloudzoom-ajax-loader {
-    background-image: image-url("cloudzoom/ajax-loader.gif");
+    background-image: image-url("cloudzoom/ajax-loader.gif") center center no-repeat;
     width:32px;
     height:32px;
 }
